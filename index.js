@@ -1,3 +1,15 @@
+/*
+    this function saves or updates values on LOCATION
+    if id is already on LOCATION it updates it
+    if id is new, it just adds it
+
+    event example for test
+    {
+        "id": "TG2",
+        "latitude": "28.785969"
+    }
+*/
+
 // Load the AWS SDK for Node.js
 var AWS = require('aws-sdk');
 
@@ -21,7 +33,7 @@ exports.handler = (event, context, callback) => {
                 S: event.id
             },
             'latitude': {
-                S: '777'
+                S: event.latitude
             }
         }
     };
