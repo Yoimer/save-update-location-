@@ -19,8 +19,7 @@ def lambda_handler(event, context):
            'latitude': '28.785969',
            'longitude': '-81.332263',
            'address': '363 Silver Pine Dr',
-           'site': 'Lake Mary',
-           'site_id': '10'
+           'site': 'Lake Mary'
         }
     )
 
